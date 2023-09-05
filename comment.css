@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: YekanBakhBold;
+}
+
+
+h1{
+    color: cornsilk;
+    margin: 10px 2rem;
+}
+body{
+    background-color: #fcfcfc;
+}
+
+
+.comment-main-img{
+    display: block;
+    
+}
+
+.comment-main{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: cursive;
+   
+}
+
+.book-img{
+    height: 200px; 
+    width: 200px; 
+    border-radius: 10px; 
+    margin-top: 150px; 
+    
+}
+
+.main-text{
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.book-title{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 50px;
+    color: gray;
+    font-family: YekanBakhBold;
+    
+
+}
+
+.book-brief{
+    margin-top: 10px;
+    font-size: 20px;
+    color: gray;
+    line-height: 1.7rem;
+    font-family: iranyekanwebmedium;
+    text-align: justify;
+}
+
+.comments{
+
+    width: 80%;
+    margin: 130px auto;
+       
+}
+
+.comment{
+       width: 80%;
+      height: auto;
+       margin:30px auto;
+       border-width: 1px;
+       border-color: rgb(223, 219, 219);
+       border-style: solid;
+       border-radius: 10px;
+       box-shadow: 0 4px 4px rgb(212, 218, 217);
+       padding: 20px 30px 0 30px;
+       background-color: #fff;
+}
+
+.username{
+    font-family: iranyekanwebregular;
+}
+
+.comment-text{
+    padding-top: 10px; 
+    color: rgb(83, 82, 82);
+    font-family: YekanBakhMedium;
+}
+
+.comment-footer{
+    width: 80%;
+    font-size: 13px;
+    font-weight: 400;
+    color: #999;
+    text-align: right;
+    box-sizing: border-box;
+    
+    
+    
+    
+}
+
+.right-comment{
+    min-height: 28px;
+    padding: 30px 2px 10px 10px;
+}
+
+.btn{
+      background: #fff;
+      border: none;
+      color: gray;
+      border: 1px solid gray;
+      width: 70px;
+      height: 30px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 1s ease;
+      font-family: YekanBakhMedium;
+      text-decoration: none;
+}
+
+.btn:hover{
+    border:rgb(109, 33, 141);
+    background-color: rgb(109, 33, 141);
+    color: #fff;
+}
+
+#delete{
+    margin-right: 10px;
+    
+}
+
+.edit{
+    width: 40%;
+    height: 450px;
+    border: 1px solid rgb(94, 93, 93);
+    margin: 30px auto;
+    direction: rtl;
+}
+
+.edit h3{
+    font-family: YekanBakhBold;
+    padding: 10px 10px 3px 10px;
+    font-size: 2rem;
+}
+
+.edit div{
+    width: 200px;
+    height: 1px;
+    background-color: rgb(94, 93, 93);
+    margin: 3px 15px;
+    
+}
+
+.edit textarea{
+    width: 90%;
+    height: auto;
+    min-height: 200px;
+    margin: 10px;
+    text-align: justify;
+    padding: 10px;
+    font-family: YekanBakhMedium;
+    
+}
+
+.edit .btn{
+    margin-top: 80px;
+    margin-right: 20px;
+}
+
+
+#comment-input{
+    width: 90%;
+    height: auto;
+    /* min-height: 100px; */
+    margin: 10px;
+    text-align: justify;
+    padding: 10px;
+    font-family: YekanBakhMedium;
+}
+
+.write-comment{
+    width: 85%;
+    height: auto;
+     margin:30px auto;
+     margin-bottom: 50px;
+     padding: 20px 30px 0 30px;
+     background-color: #fff;
+
+}
+
+.write-comment .btn{
+    margin-right: 10px;
+}
+
+.write-comment h2{
+    font-family: YekanBakhBold;
+}
+
+.write-comment .div{
+    width: 95%;
+    height: 1px;
+    background-color: rgb(175, 174, 174);
+    margin: 20px 0px;
+}
+
+.register-btn{
+    width: 100px;
+    padding: 4px 20px;
+}
+
+.login-btn{
+    padding: 4px 20px;
+}
+
+/* .write-comment .btn{
+    display: none;
+} */
+

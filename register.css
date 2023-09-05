@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#navbar img{
+height: 50px;
+width: 50px;
+border-radius: 50%;
+margin: 5px 2rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(64, 32, 94);
+    width: 100%;
+    color: gray;
+    
+}
+
+#navbar{
+    display: flex;
+
+}
+  
+nav ul{
+    display: flex;
+    margin: 20px;
+    list-style-type: none;
+    
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: cornsilk;
+    font-weight: bold;
+}
+
+h1{
+    color: cornsilk;
+    margin: 10px 2rem;
+}
+body{
+    background-color: #fcfcfc;
+}
+
+.register{
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fcfcfc;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 50px 0px;
+}
+
+.register h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: YekanBakhHeavy;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.register .fields{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: iranyekanwebregular;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.fields input{
+    height: 50px;
+    border: 1px solid rgba(92, 92, 92, 0.6);
+    margin-top: 10px;
+    border-radius: 3px;
+    transition: .1s ease;
+    padding: 0 5px 0;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: iranyekanwebregular;
+    font-size: 1rem;
+}
+
+.fields input:hover{
+    border: 1px solid black;
+}
+
+.register .register-submit{
+    margin-top: 50px;
+    background-color: rgb(126, 87, 194);
+    color: #fff;
+    border: none;
+    height: 40px;
+    align-items: center;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    transition: .1s ease;
+}
+
+.register .register-submit:hover{
+    background-color: rgb(84, 49, 145);
+}
+
+.error{
+    width: 50%;
+    margin: 50px auto;
+    background-color: #c8b4ba;
+    padding: 20px;
+    font-family: iranyekanwebregular;
+    border-radius: 10px;
+}
+
+/* massege for password  */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.header-lable{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 350px;
+    background-color: grey;
+    color: #fff;
+	font-size: 16px;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  #440522 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
