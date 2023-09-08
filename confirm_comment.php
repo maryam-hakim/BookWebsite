@@ -1,3 +1,11 @@
+<?php
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+	
+} 
+?>
+
 <html lang="fa"  dir="rtl">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,11 +24,12 @@
                     $iduser = $row[1];
                     $idbook = $row[2];
                     $text = $row[3];
+					
                 }
 				$stmt = $conn->prepare("INSERT INTO comment (text, idbook, iduser) VALUES (?, ?, ?)");
                 $stmt->bind_param("sss", $text, $idbook , $iduser);
                 $stmt->execute();
-                echo "New records created successfully";
+                
 
                 $stmt->close();
 
@@ -33,8 +42,13 @@
 		        //display message to user		
 		        if($stmt)
 		        {
+					$Status = 0;
+					$_SESSION["idbook"] = $idbook;
+					$_SESSION["iduser"] = $iduser;
+					// $_SESSION["status"] = $Status;
+			
 			        echo"<script>alert('دیدگاه مورد نظر به درستی تایید شد.')</script>";
-			        echo"<script>window.open('./index.php?view_comment','_self')</script>";
+			        echo"<script>window.open('../Send_email.php?id=.$Status','_self')</script>";
 		        }
 		}
 		?>
